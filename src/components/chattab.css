@@ -1,0 +1,115 @@
+
+.chatTab{
+    display: flex;
+   width: 100%;
+   flex-direction: column;
+
+}
+.chatTab_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1rem;
+    background-color: #f5f5f5;
+}
+
+.chatTab_header_info{
+    display: flex;
+    align-items: center;
+}
+
+.chatTab_header_info_title{
+    padding-left: 1rem;
+}
+
+.chatTab_body{
+    background-image: url("../assets/whatsappbg.png");
+    background-color: #666;
+    background-blend-mode:exclusion;
+    height: 80vh;
+    width: 100%;
+    overflow-y: scroll;
+   display: block;
+}
+
+.chatTab_body{
+    padding: 1rem;
+}
+
+.chatTab_body article{
+    float: left;
+    clear: both;
+}
+.chatTab_body article .topName{
+   text-transform: capitalize;
+   margin-left: 4rem;
+   font-weight: medium;
+   color: #fff
+}
+.chatTab_body article small{
+  font-size: .7rem;
+  float: right;
+  padding: 0 1rem;
+}
+.chatTab_body .Text{
+    background-color: #1dff92;
+    margin: .1rem 1rem;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    
+}
+
+.textBody{
+   cursor: pointer
+}
+
+@media (max-width: 768px) {
+    .chatTab_body{
+        padding: 1rem .2rem .1rem;
+    }
+    .chatTab_body .Text{
+        background-color: #1dff92;
+        margin: .1rem 1rem;
+        border-radius: 2rem;
+    }
+    .chatTab_body .sendText{
+        
+        padding: .2rem 1rem 1rem!important;
+        
+    }
+}
+
+.chatTab_body .sender{
+    float: right;
+    clear: both;
+}
+.chatTab_body .sendText{
+    /*  clip path */
+    border-radius: 0;
+    padding: 1rem ;
+    
+}
+
+.chatTab_footer form{
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f5f5;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .6rem;
+}
+
+.chatTab_footer > form, input{
+    width: 100%;
+    
+}
+
+.chatTab_footer > form input{
+    outline: none;
+    border: none;
+    padding: .4rem 0;
+    margin: 0 .2rem;
+    box-shadow: 0 0 2px #989898 ;
+}
+

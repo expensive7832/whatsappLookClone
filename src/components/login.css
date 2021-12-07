@@ -1,0 +1,57 @@
+.login{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #CCD2D4;
+    text-align:center;
+}
+
+
+.login_design{
+    height: 80vh;
+    width: 60%;
+    background-color: #EFEFEF;
+    border-radius: 2rem;
+
+}
+@media(max-width: 660px){
+.login_design{
+      width: 90%;
+    }
+}
+.login_topbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+.login_center{
+    display: grid;
+    place-items: center;
+    height: 50%;
+}
+.login_center img{
+    background-color: #000;
+    border-radius: 50%;
+    height: 6rem;
+    object-fit: contain;
+}
+.login_center .randomImage{
+    border-radius: 50%;
+    height: .5rem;
+    object-fit: contain;
+    margin-top: 2rem;
+    text-align: center;
+}
+.login_center .randomImage img{
+   margin-left: -1rem;
+}
+.login_center h1, small{
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.login_center .signin{
+    position:  relative; 
+    top: 10rem;
+   
+}

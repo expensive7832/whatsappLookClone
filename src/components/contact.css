@@ -1,0 +1,41 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    background-color: #f2f3f4;
+    flex: 1;
+    padding: 1rem;
+}
+
+.contact:hover{
+   background-color: #d3d3d3;
+}
+.contact h3{
+   margin-right: 3rem;
+}
+
+.contact .popAlert{
+   font-size: 1.4rem;
+   margin-left: 3rem;
+   animation: messageAlert 5s linear 2s infinite alternate;
+}
+
+@keyframes messageAlert{
+   0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+.contact .chatImage{
+   border-radius: 50%;
+   width: 5rem;
+   height: 5rem;
+   object-fit: contain;
+   padding: .1rem;
+}
+

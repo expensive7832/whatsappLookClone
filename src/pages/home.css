@@ -1,0 +1,26 @@
+.home{
+    display: flex;
+    width: 100%;
+}
+
+.home .sidebar{
+    flex: 0.30;
+}
+.home .chatTab{
+    flex: 0.70;
+}
+
+@media (max-width: 768px) {
+    .home{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .home .sidebar{
+        flex: 1;
+    }
+    .home .chatTab{
+        flex: 1;
+        display: none;
+    }
+}
